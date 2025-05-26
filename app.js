@@ -6,10 +6,10 @@ const path = require("path")
 const staticRoute = require("./routes/staticRoutes")
 
 const app = express();
-const port = 8001;
+const port = process.env.PORT || 8001;
 
 // Connect to MongoDB
-connectToMongoDB("mongodb://localhost:27017/short-url").then(() => {
+connectToMongoDB(process.env.PORT.MONGO_URL).then(() => {
   console.log("MongoDB connected");
 });
 
