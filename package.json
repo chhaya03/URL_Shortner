@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+      "build": "echo 'No build necessary'"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "mongoose": "^8.14.0",
     "nanoid": "^5.1.5",
     "shortid": "^2.2.17"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
